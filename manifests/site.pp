@@ -62,20 +62,20 @@ node default {
   }
 
   # node versions
-  include nodejs::0-4
-  include nodejs::0-6
-  include nodejs::0-8
+  #include nodejs::0-4
+  #include nodejs::0-6
+  #include nodejs::0-8
 
   # default ruby versions
-  include ruby::1_8_7
-  include ruby::1_9_2
+  #include ruby::1_8_7
+  #include ruby::1_9_2
   include ruby::1_9_3
-  include ruby::2_0_0
+  #include ruby::2_0_0
 
   # common, useful packages
   package {
     [
-      'ack',
+      #'ack',
       'findutils',
       'gnu-tar'
     ]:
