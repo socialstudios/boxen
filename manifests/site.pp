@@ -86,3 +86,9 @@ node default {
     target => $boxen::config::repodir
   }
 }
+
+require ruby::1_9_3_p194
+# Set the global default ruby (auto-installs it if it can)
+class { 'ruby::global':
+  version => '1.9.3'
+}
