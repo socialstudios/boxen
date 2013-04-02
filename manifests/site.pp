@@ -92,3 +92,9 @@ require ruby::1_9_3_p194
 class { 'ruby::global':
   version => '1.9.3'
 }
+
+ruby::gem { "bundler for ${version}":
+  gem     => 'bundler',
+  ruby    => $version,
+  version => '~> 1.2.0'
+}
