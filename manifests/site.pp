@@ -72,6 +72,21 @@ node default {
     ensure => link,
     target => $boxen::config::repodir
   }
+
+  # include some provided versions
+  include nodejs::v0_10
+  include nodejs::v0_8_8
+
+  # install any arbitrary nodejs version
+  nodejs { 'v0.10.1': }
+
+  class { 'nodejs::global': version => 'v0.10.0' }
+
+  # install some npm modules
+  # Yeoman tools
+  nodejs::module { 'yo': node_version => 'v0.10' }
+  nodejs::module { 'grunt-cli': node_version => 'v0.10' }
+  nodejs::module { 'bower': node_version => 'v0.10' }
 }
 
 require ruby::1_9_3_p194
