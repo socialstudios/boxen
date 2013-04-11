@@ -57,26 +57,13 @@ node default {
   include nvm
   include mongodb
 
-  # fail if FDE is not enabled
-#  if $::root_encrypted == 'no' {
-#    fail('Please enable full disk encryption and try again')
-#  }
 
-  # node versions
-  #include nodejs::0-4
-  #include nodejs::0-6
-  #include nodejs::0-8
-
-  # default ruby versions
-  #include ruby::1_8_7
-  #include ruby::1_9_2
   include ruby::1_9_3
-  #include ruby::2_0_0
   
   # common, useful packages
   package {
     [
-      #'ack',
+      'ag',
       'findutils',
       'gnu-tar'
     ]:
