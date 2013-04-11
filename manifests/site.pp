@@ -54,12 +54,11 @@ node default {
   include git
   include hub
   include nginx
-  include nvm
   include mongodb
 
 
   include ruby::1_9_3
-  
+
   # common, useful packages
   package {
     [
