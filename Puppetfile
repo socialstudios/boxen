@@ -32,6 +32,7 @@ github "stdlib",   "3.0.0", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",     "1.0.0"
 github "mongodb",  "1.0.0"
 github "phantomjs","1.0.0"
+github "memcached","1.0.0"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.

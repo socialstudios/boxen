@@ -63,6 +63,9 @@ node default {
   package {
     [
       'ag',
+      'htop',
+      'tree',
+      'ffmpeg',
       'findutils',
       'gnu-tar'
     ]:
@@ -89,6 +92,8 @@ node default {
   nodejs::module { 'bower': node_version => 'v0.10' }
 
   include phantomjs
+
+  include memcached
 }
 
 require ruby::1_9_3_p194
