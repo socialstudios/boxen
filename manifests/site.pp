@@ -67,6 +67,7 @@ node default {
       'tree',
       'ffmpeg',
       'findutils',
+      'gist',
       'gnu-tar'
     ]:
   }
