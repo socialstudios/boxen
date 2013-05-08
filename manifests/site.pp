@@ -68,7 +68,8 @@ node default {
       'ffmpeg',
       'findutils',
       'gist',
-      'gnu-tar'
+      'gnu-tar',
+      's3cmd'
     ]:
   }
 
